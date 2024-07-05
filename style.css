@@ -2,6 +2,10 @@ body {
     background-color: #201c1c;
 }
 
+p {
+    font-size: 16px;
+}
+
 a {
    text-decoration: none; 
    color:#E3D3C0;
@@ -35,22 +39,40 @@ body {
 
 .right{
     display: flex;
-    gap: 8px;
+    gap: 32px;
 }
 
 .hero {
-    margin: 24px;
+    padding: 64px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 16px;
+}
+
+.hero h1 {
+    font-size: 60px;
+}
+
+.hero .content{
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 62px;
+    align-items: flex-start;
+    flex-flow: column wrap;
+    max-width: 300px;
+    padding: 8px;
+    font-weight: bold;
 }
-.hero .img{
-    justify-content: center;
+
+img{
+    border-radius: 15px;
+    min-width: 0;
 }
+
 .hero img{
-    width: 100px;
+    max-width: 30%;
 }
+
 .gallery, .call-to-action{
     background-color: #E3D3C0;
     color: 242E3E;
@@ -59,6 +81,13 @@ body {
 .gallery{
     text-align: center;
     color: #787F8B;
+    padding: 64px;
+}
+
+.gallery h2 {
+    margin: 24px;
+    font-size: 36px;
+    
 }
 
 .items{
@@ -66,29 +95,40 @@ body {
     /* margin: 0 64px; */
     justify-content: center;
     flex-flow: row wrap;
-    gap: 16px;
+    gap: 64px;
+    flex-grow: 1;
+    padding: 0px 8px;
 }
 
 .item {
     width: 150px;
     text-align: center;
+    margin-top: 36px;
 }
 
 .quote{
     background-color: #242E3E;
     color: #E3D3C0;
     text-align: center;
+    padding: 64px;
+
 }
 
 .call-to-action{
+    display: flex;
+    justify-content: center;
     background-color: #E3D3C0;
-    padding: 30px;
+    padding: 64px;
+
 }
 .call-to-action .banner{
+    padding: 18px;
     border-radius: 15px;
+    gap: 36px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #996A57;
+    width: 600px;
 }
 
 .call-to-action .banner .text{
